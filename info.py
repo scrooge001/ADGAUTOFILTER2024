@@ -23,7 +23,7 @@ WEBHOOK = bool(environ.get("WEBHOOK", True)) # for web support on/off
 SESSION = environ.get('SESSION', 'Movies_search')
 API_ID = int(environ.get('API_ID', '29228879'))
 API_HASH = environ.get('API_HASH', 'f8c420d7f974ef0a2bc23a9a4a0dc859')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6859230794:AAGCvl-vCp_OrvQVKbvFTturjVOct36yTWs")
+BOT_TOKEN = environ.get('BOT_TOKEN', "7112418170:AAFuWw76uGmxY-qzjJLuvxkIOiI7VsC19so")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -42,7 +42,7 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://adgmoviesearch1:adgmoviesearch1@cluster0.qtpy0qq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://adgmoviesearch1:adgmoviesearch1@cluster0.7zaohvg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'scrooo_files')
 
