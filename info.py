@@ -21,9 +21,9 @@ def is_enabled(value, default):
 PORT = environ.get("PORT", "8080")
 WEBHOOK = bool(environ.get("WEBHOOK", True)) # for web support on/off
 SESSION = environ.get('SESSION', 'Movies_search')
-API_ID = int(environ.get('API_ID', '29228879'))
-API_HASH = environ.get('API_HASH', 'f8c420d7f974ef0a2bc23a9a4a0dc859')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7112418170:AAFuWw76uGmxY-qzjJLuvxkIOiI7VsC19so")
+API_ID = int(environ.get('API_ID', '21694998'))
+API_HASH = environ.get('API_HASH', 'c54dcb4c53904a86444cc3c831aa8de2')
+BOT_TOKEN = environ.get('BOT_TOKEN', "7038855839:AAEnSmnm9esVO6vrxJ5nYWZkMMgxojO3KOQ")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
