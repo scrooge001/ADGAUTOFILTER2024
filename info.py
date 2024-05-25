@@ -21,9 +21,9 @@ def is_enabled(value, default):
 PORT = environ.get("PORT", "8080")
 WEBHOOK = bool(environ.get("WEBHOOK", True)) # for web support on/off
 SESSION = environ.get('SESSION', 'Movies_search')
-API_ID = int(environ.get('API_ID', '20598873'))
-API_HASH = environ.get('API_HASH', 'a21ea5e7700d81270cb9fa397498d9d1')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7092898572:AAEa2gzbOBqa9IVUE10i_4UQTdRvmVw4_F4")
+API_ID = int(environ.get('API_ID', ''))
+API_HASH = environ.get('API_HASH', '')
+BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -42,7 +42,7 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://perera51:perera51@cluster0.n64b9xg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'adg_files')
 
@@ -63,8 +63,8 @@ SHORT_URL = environ.get("SHORT_URL")
 SHORT_API = environ.get("SHORT_API")
 
 # Others
-IMDB_DELET_TIME = int(environ.get('IMDB_DELET_TIME', "10800"))
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002129150161'))
+IMDB_DELET_TIME = int(environ.get('IMDB_DELET_TIME', "108000"))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'scrooge010')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 PM_IMDB = environ.get('PM_IMDB', "False")
