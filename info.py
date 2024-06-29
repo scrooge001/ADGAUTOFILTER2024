@@ -18,7 +18,7 @@ def is_enabled(value, default):
 
 
 # Bot information
-PORT = environ.get("PORT", "8080")
+PORT = environ.get("PORT", "8010")
 WEBHOOK = bool(environ.get("WEBHOOK", True)) # for web support on/off
 SESSION = environ.get('SESSION', 'Movies_search')
 API_ID = int(environ.get('API_ID', '29228879'))
@@ -33,7 +33,7 @@ BOT_START_TIME = time()
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7044258634').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get(''-1002089284592', '-1002089284592').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('-1002089284592', '-1002089284592').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('1852868839', '7044258634').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL', '-1002016402459')
