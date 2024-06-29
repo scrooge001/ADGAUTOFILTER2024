@@ -260,7 +260,7 @@ async def pm_spoll_choker(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply("I couldn't find anything related to that. Check your spelling")
+        k = await msg.reply("❌ 𝙄 𝘾𝙤𝙪𝙡𝙙𝙣'𝙩 𝙁𝙞𝙣𝙙 𝘼𝙣𝙮𝙩𝙝𝙞𝙣𝙜 𝙍𝙚𝙡𝙖𝙩𝙚𝙙 𝙏𝙤 𝙏𝙝𝙖𝙩. 𝘾𝙝𝙚𝙘𝙠 𝙔𝙤𝙪𝙧 𝙎𝙥𝙚𝙡𝙡𝙞𝙣𝙜 𝙊𝙧 𝙎𝙚𝙣𝙙 𝙈𝙤𝙫𝙞𝙚/𝙎𝙚𝙧𝙞𝙚𝙨 𝙉𝙖𝙢𝙚 𝙊𝙣𝙡𝙮. 𝙄𝙛 𝙄𝙩'𝙨 𝙉𝙤𝙩 𝙁𝙤𝙪𝙣𝙙 𝙍𝙚𝙦𝙪𝙚𝙨𝙩 𝘽𝙮 𝙏𝙮𝙥𝙞𝙣𝙜 @𝙖𝙙𝙢𝙞𝙣 𝙖𝙣𝙙 𝙈𝙤𝙫𝙞𝙚/𝙎𝙚𝙧𝙞𝙚𝙨 𝙉𝙖𝙢𝙚. 𝘼𝙙𝙢𝙞𝙣𝙨 𝙒𝙞𝙡𝙡 𝙐𝙥𝙡𝙤𝙖𝙙 𝘼𝙣𝙙 𝙄𝙣𝙛𝙤𝙧𝙢 𝙔𝙤𝙪. n/n/⚜️ 𝙀𝙭 : @𝙖𝙙𝙢𝙞𝙣 𝘼𝙫𝙚𝙣𝙜𝙚𝙧𝙨")
         await asyncio.sleep(8)
         await k.delete()
         return
