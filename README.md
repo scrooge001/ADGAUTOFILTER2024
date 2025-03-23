@@ -85,8 +85,13 @@ pip3 install -U -r requirements.txt
 Edit info.py with variables as given below then run bot
 python3 bot.py
 
-fix http core error
+@fix http core error
 pip install googletrans==4.0.0-rc1
+@cv2 lib error
+apt install libgl1-mesa-glx
+@imdb error
+pip install cinemagoer
+pip install IMDbPY
 
 ## Commands
 ```
